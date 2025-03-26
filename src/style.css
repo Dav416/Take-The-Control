@@ -1,13 +1,18 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-:root {
-    --color-tc-white: #FFF7EA;
-    --color-tc-black: #302E2C;
-    --color-tc-disabled: #B6B6B6;
-    --color-tc-blue: #53BFD2;
-}
+@layer base {
+    :root {
+        --color-tc-white: #FFF7EA;
+        --color-tc-black: #302E2C;
+        --color-tc-disabled: #B6B6B6;
+        --color-tc-blue: #53BFD2;
+        --font-sans: 'Poppins', sans-serif;
+    }
 
-body {
-    min-height: 100vh;
-    background-color: var(--color-tc-white);
+    body {
+        min-height: 100vh;
+        background-color: var(--color-tc-white);
+        font-family: var(--font-sans);
+    }
 }
