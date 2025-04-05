@@ -1,12 +1,10 @@
-<script setup>
+<script lang="ts" setup>
 </script>
 
 <template>
-  <div>
-    <h1 class="text-3xl font-bold underline">
-     Hello world!
-    </h1>
-  </div>
+<div>
+    <router-view/>
+</div>
 </template>
 
 <style scoped>
