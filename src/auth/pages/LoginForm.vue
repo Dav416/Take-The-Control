@@ -1,40 +1,41 @@
 <template>
-    <div class="flex justify-center">
+    <div class="flex">
         <FormImage />
         <div class="h-screen w-screen">
-            <form>
+            <form class="flex flex-col items-center justify-center h-full w-full">
                 <div class="flex flex-col items-center">
-                    <h1 class="text-6xl text-center mt-20">Iniciar Sesión</h1>
-                    <h4 class="my-10">¡Bienvenido! Por favor, ingresa con tu cuenta.</h4>
+                    <h1 class="text-center">Iniciar Sesión</h1>
+                    <h4 class="mb-10 disabled-text-color">¡Bienvenido! Por favor, ingresa con tu cuenta.</h4>
                 </div>
-                <div class="flex flex-col items-center mx-12">
+                <div class="flex flex-col items-center w-md">
                     <FormInput
                         placeholder="Usuario"
                         type="text"
                         v-model="user"
-                        class="mb-10 text-center text-2xl"
+                        class="mb-10 text-center text-xl"
                         autocomplete="username"
                     />
                     <FormInput
                         placeholder="Contraseña"
                         type="password"
                         v-model="password"
-                        class="text-center text-2xl"
+                        class="text-center text-xl"
                         autocomplete="current-password"
                     />
                 </div>
-                <div class="flex mx-12 justify-between mt-3">
+                <div class="flex justify-between mt-3 w-md">
                     <FormCheckbox
                         label="Recuerdame"
                         v-model="remember"
+                        class="font-medium text-sm"
                     />
-                    <span class="text-xs mt-1">¿Olvidaste tú contraseña?</span>
+                    <span class="text-xs mt-1 disabled-text-color font-medium">¿Olvidaste tú contraseña?</span>
                 </div>
                 <div class="flex flex-col items-center mt-20">
                     <FormButton label="Ingresar"/>
-                    <div class="flex mt-10 text-xl">
-                        <span class="mr-2">¿Nuevo usuario?</span>
-                        <span style="color: var(--color-tc-blue)">Registrate</span>
+                    <div class="flex mt-10">
+                        <span class="mr-2 disabled-text-color font-medium">¿Nuevo usuario?</span>
+                        <span class="blue-text-color font-medium">RegÍstrate</span>
                     </div>
                 </div>
             </form>
@@ -54,5 +55,11 @@ const remember = ref(false)
 
 </script>
 <style scoped>
-    
+    .disabled-text-color {
+        color: var(--color-tc-disabled);
+    }
+
+    .blue-text-color {
+        color: var(--color-tc-blue);
+    }
 </style>

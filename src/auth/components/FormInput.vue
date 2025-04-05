@@ -3,7 +3,7 @@
         :type="type"
         :placeholder="placeholder"
         :value="modelValue"
-        class="w-full h-16 border-1 rounded-sm" 
+        class="w-full h-14 border-1 rounded-sm" 
         @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value )" 
         v-bind="$attrs"
     >
