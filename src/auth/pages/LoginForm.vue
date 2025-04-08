@@ -4,7 +4,7 @@
         <div class="h-screen w-screen">
             <form class="flex flex-col items-center justify-center h-full w-full">
                 <div class="flex flex-col items-center">
-                    <h1 class="text-center text-[2.5rem] blue-green-text-color">Iniciar Sesión</h1>
+                    <h1 class="text-center text-[2.5rem] blue-green-text-color font-bold">Iniciar Sesión</h1>
                     <h4 class="mb-10 disabled-text-color">¡Bienvenido! Por favor, ingresa con tu cuenta.</h4>
                 </div>
                 <div class="flex flex-col items-center w-md">
