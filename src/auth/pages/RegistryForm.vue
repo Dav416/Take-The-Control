@@ -59,8 +59,17 @@
                         class="font-medium text-sm"
                     />
                 </div>
-                <div class="mt-10">
+                <div class="flex flex-col items-center mt-10">
                     <FormButton label="Registrate"/>
+                    <div class="flex mt-10">
+                        <span class="mr-2 disabled-text-color font-medium">¿Ya tienes una cuenta?</span>
+                        <router-link
+                            to="/"
+                            class="blue-text-color font-medium"
+                        >
+                        Inicia sesión aquí
+                        </router-link>
+                    </div>
                 </div>
             </form>
         </div>

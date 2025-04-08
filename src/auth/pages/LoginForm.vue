@@ -35,7 +35,12 @@
                     <FormButton label="Ingresar"/>
                     <div class="flex mt-10">
                         <span class="mr-2 disabled-text-color font-medium">¿Nuevo usuario?</span>
-                        <span class="blue-text-color font-medium">RegÍstrate</span>
+                        <router-link
+                            to="/register"
+                            class="blue-text-color font-medium"
+                        >
+                        Registrarse
+                        </router-link>
                     </div>
                 </div>
             </form>

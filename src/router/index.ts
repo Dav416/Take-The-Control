@@ -8,7 +8,7 @@ const routes = [
     component: () => import('@/auth/pages/LoginForm.vue'),
   },
   {
-    path: '/registro',
+    path: '/register',
     name: 'RegistryForm',
     component: () => import('@/auth/pages/RegistryForm.vue'),
   },
