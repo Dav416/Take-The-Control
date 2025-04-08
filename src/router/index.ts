@@ -7,6 +7,11 @@ const routes = [
     name: 'LoginForm',
     component: () => import('@/auth/pages/LoginForm.vue'),
   },
+  {
+    path: '/registro',
+    name: 'RegistryForm',
+    component: () => import('@/auth/pages/RegistryForm.vue'),
+  },
 ]
 
 const router = createRouter({
