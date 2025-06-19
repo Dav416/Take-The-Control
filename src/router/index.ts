@@ -12,6 +12,11 @@ const routes = [
     name: 'RegistryForm',
     component: () => import('@/auth/pages/RegistryForm.vue'),
   },
+  {
+    path: '/main',
+    name: 'MainView',
+    component: () => import('@/auth/pages/MainView.vue'),
+  }
 ]
 
 const router = createRouter({
