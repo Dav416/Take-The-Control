@@ -1,11 +1,11 @@
 <template>
   <div>
-    <MainHeader />
-    <MainSideBar />
+    <Header />
+    <AsideBar />
   </div>
 </template>
 
 <script lang="ts" setup>
-  import MainHeader from '../components/MainHeader.vue';
-  import MainSideBar from '../components/MainSideBar.vue';
+  import Header from '../components/Header.vue';
+  import AsideBar from '../components/AsideBar.vue';
 </script>
