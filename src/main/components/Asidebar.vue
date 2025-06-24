@@ -13,7 +13,7 @@
 
       <div class="space-y-2 font-medium text-lg w-full">
 
-        <AsideButton class="dark:bg-[var(--color-tc-white)] dark:text-[var(--color-tc-blue-green)]" label="Ingresos" link="#" />
+        <AsideButton class="dark:bg-[var(--color-tc-white)] dark:text-[var(--color-tc-blue-green)] font-bold" label="Ingresos" link="#" />
 
         <AsideButton label="Gastos" link="#" />
 
