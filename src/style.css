@@ -22,3 +22,26 @@
       } */
       
 }
+
+@layer utilities {
+  /* Text color utilities */
+  .text-tc-white        { color: var(--color-tc-white); }
+  .text-tc-black        { color: var(--color-tc-black); }
+  .text-tc-disabled     { color: var(--color-tc-disabled); }
+  .text-tc-blue         { color: var(--color-tc-blue); }
+  .text-tc-blue-green   { color: var(--color-tc-blue-green); }
+
+  /* Background color utilities */
+  .bg-tc-white          { background-color: var(--color-tc-white); }
+  .bg-tc-black          { background-color: var(--color-tc-black); }
+  .bg-tc-disabled       { background-color: var(--color-tc-disabled); }
+  .bg-tc-blue           { background-color: var(--color-tc-blue); }
+  .bg-tc-blue-green     { background-color: var(--color-tc-blue-green); }
+
+  /* Border color utilities */
+  .border-tc-white      { border-color: var(--color-tc-white); }
+  .border-tc-black      { border-color: var(--color-tc-black); }
+  .border-tc-disabled   { border-color: var(--color-tc-disabled); }
+  .border-tc-blue       { border-color: var(--color-tc-blue); }
+  .border-tc-blue-green { border-color: var(--color-tc-blue-green); }
+}

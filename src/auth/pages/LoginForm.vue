@@ -4,8 +4,8 @@
         <div class="h-screen w-screen">
             <form class="flex flex-col items-center justify-center h-full w-full">
                 <div class="flex flex-col items-center">
-                    <h1 class="text-center text-[2.5rem] blue-green-text-color font-bold">Iniciar Sesión</h1>
-                    <h4 class="mb-10 disabled-text-color">¡Bienvenido! Por favor, ingresa con tu cuenta.</h4>
+                    <h1 class="text-center text-[2.5rem] text-tc-blue-green font-bold">Iniciar Sesión</h1>
+                    <h4 class="mb-10 text-tc-disabled">¡Bienvenido! Por favor, ingresa con tu cuenta.</h4>
                 </div>
                 <div class="flex flex-col items-center w-md">
                     <FormInput
@@ -29,17 +29,17 @@
                         v-model="remember"
                         class="font-medium text-sm"
                     />
-                    <span class="text-xs mt-1 disabled-text-color font-medium">¿Olvidaste tú contraseña?</span>
+                    <span class="text-xs mt-1 text-tc-disabled font-medium">¿Olvidaste tú contraseña?</span>
                 </div>
                 <div class="flex flex-col items-center mt-20">
-                    <FormButton label="Ingresar"/>
+                    <FormButton label="Ingresar" @click="login" type="button"/>
                     <div class="flex mt-10">
-                        <span class="mr-2 disabled-text-color font-medium">¿Nuevo usuario?</span>
+                        <span class="mr-2 text-tc-disabled font-medium">¿No tienes una cuenta?</span>
                         <router-link
                             to="/register"
-                            class="blue-text-color font-medium"
+                            class="text-tc-blue font-medium"
                         >
-                        Registrarse
+                        Registrate
                         </router-link>
                     </div>
                 </div>
@@ -53,22 +53,23 @@ import FormImage from '../components/FormImage.vue'
 import FormInput from '../components/FormInput.vue'
 import FormCheckbox from '../components/FormCheckbox.vue'
 import FormButton from '../components/FormButton.vue'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const user = ref('')
 const password = ref('')
 const remember = ref(false)
 
+function login() {
+    if(user.value === 'test' && password.value === '123') {
+        alert('Login exitoso')
+        router.push('/main')
+    }
+    else if(user.value === '' && password.value === '') {
+        alert('Debes ingresar un usuario y una contraseña')
+    }
+    else {
+        alert('Usuario o contraseña incorrectos')
+    }
+}
 </script>
-<style scoped>
-    .disabled-text-color {
-        color: var(--color-tc-disabled);
-    }
-
-    .blue-text-color {
-        color: var(--color-tc-blue);
-    }
-
-    .blue-green-text-color {
-        color: var(--color-tc-blue-green);
-    }
-</style>
