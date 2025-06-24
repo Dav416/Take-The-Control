@@ -4,7 +4,7 @@
         <div class="h-screen w-screen">
             <form class="flex flex-col items-center justify-center h-full w-full">
                 <div class="flex flex-col items-center">
-                    <h1 class="text-center text-[2.5rem] blue-green-text-color font-bold m-5">Registrarse</h1>
+                    <h1 class="text-center text-[2.5rem] text-tc-blue-green font-bold m-5">Registrarse</h1>
                 </div>
                 <div class="flex flex-col w-[40rem]">
                     <div>
@@ -62,10 +62,10 @@
                 <div class="flex flex-col items-center mt-5">
                     <FormButton label="Registrate"/>
                     <div class="flex mt-2">
-                        <span class="mr-2 disabled-text-color font-medium">¿Ya tienes una cuenta?</span>
+                        <span class="mr-2 text-tc-disabled font-medium">¿Ya tienes una cuenta?</span>
                         <router-link
                             to="/"
-                            class="blue-text-color font-medium"
+                            class="text-tc-blue font-medium"
                         >
                         Inicia sesión aquí
                         </router-link>
@@ -92,19 +92,4 @@ const consentTerms = ref(false)
 
 </script>
 <style scoped>
-    .disabled-text-color {
-        color: var(--color-tc-disabled);
-    }
-
-    .blue-text-color {
-        color: var(--color-tc-blue);
-    }
-
-    .blue-green-text-color {
-        color: var(--color-tc-blue-green);
-    }
-    .blue-green-background-color {
-        background-color: var(--color-tc-blue-green);
-    }
-
 </style>

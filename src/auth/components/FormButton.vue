@@ -11,7 +11,4 @@ defineProps<{
 }>()
 </script>
 <style scoped>
-    .bg-tc-blue {
-        background-color: var(--color-tc-blue);
-    }
 </style>
