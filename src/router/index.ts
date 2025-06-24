@@ -15,7 +15,7 @@ const routes = [
   {
     path: '/main',
     name: 'MainView',
-    component: () => import('@/auth/pages/MainView.vue'),
+    component: () => import('@/main/pages/MainView.vue'),
   }
 ]
 
