@@ -32,7 +32,7 @@
                     <span class="text-xs mt-1 text-tc-disabled font-medium">¿Olvidaste tú contraseña?</span>
                 </div>
                 <div class="flex flex-col items-center mt-20">
-                    <FormButton label="Ingresar"/>
+                    <FormButton label="Ingresar" @click="login" type="button"/>
                     <div class="flex mt-10">
                         <span class="mr-2 text-tc-disabled font-medium">¿No tienes una cuenta?</span>
                         <router-link
@@ -53,11 +53,23 @@ import FormImage from '../components/FormImage.vue'
 import FormInput from '../components/FormInput.vue'
 import FormCheckbox from '../components/FormCheckbox.vue'
 import FormButton from '../components/FormButton.vue'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const user = ref('')
 const password = ref('')
 const remember = ref(false)
 
+function login() {
+    if(user.value === 'test' && password.value === '123') {
+        alert('Login exitoso')
+        router.push('/main')
+    }
+    else if(user.value === '' && password.value === '') {
+        alert('Debes ingresar un usuario y una contraseña')
+    }
+    else {
+        alert('Usuario o contraseña incorrectos')
+    }
+}
 </script>
-<style scoped>
-</style>
