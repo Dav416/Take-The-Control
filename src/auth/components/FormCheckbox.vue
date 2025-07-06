@@ -1,3 +1,6 @@
+/**
+ * Component for a checkbox in the form
+ */
 <template>
     <div class="flex flex-row-reverse">
         <label class="ml-2 cursor-pointer select-none" for="remember">{{ label }}</label>

@@ -1,3 +1,6 @@
+/**
+ * Component for a button in the aside bar
+ */
 <template>
   <a
     :href="link"

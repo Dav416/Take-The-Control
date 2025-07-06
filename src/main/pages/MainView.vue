@@ -1,3 +1,6 @@
+/**
+* Main view of the app
+*/
 <template>
   <div class="overflow-x-hidden bg-tc-blue-green">
     <Asidebar />

@@ -1,3 +1,6 @@
+/**
+ * Component for the logo in the aside bar
+ */
 <template>
     <div class="flex justify-center">
         <a href="#">

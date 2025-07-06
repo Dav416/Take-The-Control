@@ -1,3 +1,6 @@
+/**
+ * Component for an input in the form
+ */
 <template>
     <input 
         :type="type"

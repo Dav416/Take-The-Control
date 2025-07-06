@@ -1,3 +1,6 @@
+/**
+* Component for the login form
+*/
 <template>
     <div class="flex">
         <FormImage />
@@ -60,6 +63,9 @@ const user = ref('')
 const password = ref('')
 const remember = ref(false)
 
+/**
+* Simple logic to check and redirect to the main view
+*/ 
 function login() {
     if(user.value === 'test' && password.value === '123') {
         alert('Login exitoso')

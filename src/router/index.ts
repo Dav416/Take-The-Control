@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
+/**
+ * Routes for the app
+ */
 const routes = [
-  // Tus rutas aquí
   {
     path: '/',
     name: 'LoginForm',

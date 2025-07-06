@@ -1,3 +1,6 @@
+/**
+* Component for the registry form
+*/
 <template>
     <div class="flex">
         <FormImage />
