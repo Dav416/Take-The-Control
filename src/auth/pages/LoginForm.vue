@@ -67,15 +67,19 @@ const remember = ref(false)
 * Simple logic to check and redirect to the main view
 */ 
 function login() {
-    if(user.value === 'test' && password.value === '123') {
-        alert('Login exitoso')
-        router.push('/main')
-    }
-    else if(user.value === '' && password.value === '') {
-        alert('Debes ingresar un usuario y una contraseña')
-    }
-    else {
-        alert('Usuario o contraseña incorrectos')
-    }
+    alert('Login exitoso')
+    router.push('/main')
+    /**
+        if(user.value == '' && password.value == '') {
+            alert('Login exitoso')
+            router.push('/main')
+        }
+        else if(user.value === '' && password.value === '') {
+            alert('Debes ingresar un usuario y una contraseña')
+        }
+        else {
+            alert('Usuario o contraseña incorrectos')
+        }
+    */
 }
 </script>

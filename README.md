@@ -28,3 +28,6 @@ This is a simple web app that allows users to manage their finances.
 1. npm or pnpm or whatever you use to install dependencies
 2. Use npm run dev or whatever you use to run the app
 3. Open localhost:3000 in your browser
+
+## Note
+You can login without an account.
